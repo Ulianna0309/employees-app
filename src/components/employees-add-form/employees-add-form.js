@@ -5,16 +5,16 @@ const EmployeesAddForm = () => {
         <div className="app-add-form">
             <h3>Добавьте нового сотрудника</h3>
             <form
-                className="add-form d-flex">
+                className="add-form d-md-flex text-center">
                 <input type="text"
-                    className="form-control new-post-label"
+                    className="form-control new-post-label mb-2"
                     placeholder="Как его зовут?" />
                 <input type="number"
-                    className="form-control new-post-label"
+                    className="form-control new-post-label mb-2"
                     placeholder="З/П в $?" />
 
                 <button type="submit"
-                        className="btn btn-outline-light">Добавить</button>
+                        className="btn btn-outline-light mb-2">Добавить</button>
             </form>
         </div>
     )
