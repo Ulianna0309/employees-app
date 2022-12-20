@@ -5,8 +5,9 @@ import './employees-list.css';
 const EmployeesList = ({data}) => {
 
     const elements = data.map(item => {
+      const{id, ...itemProrps} = item;
       return(
-          <EmployeesListItem {...item}/>
+          <EmployeesListItem key={id} {...itemProrps}/>
       )
     })
 
@@ -16,5 +17,6 @@ const EmployeesList = ({data}) => {
         </ul>
     )
 }
+
 
 export default EmployeesList;
