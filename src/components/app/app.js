@@ -78,12 +78,11 @@ class App extends Component {
               <AppFilter/>
           </div>
           
-          <EmployeesList data={this.state.data} 
+          <EmployeesList 
+          data={this.state.data} 
           onDelete={this.deleteItem}
           onToggleProp={this.onToggleProp} />
           <EmployeesAddForm onAdd={this.addItem}/>
-
-        
       </div>
     );
   }
