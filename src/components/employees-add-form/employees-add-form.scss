@@ -1,0 +1,29 @@
+@import '../../vars.scss';
+
+.app{
+    &-add-form {
+        margin-top: 30px;
+        padding: 25px;
+        background-color: $dark;
+        border-radius: 4px;
+        box-shadow: 15px 15px 30px rgba(0,0,0, .15);
+        color: $white;
+    }
+}
+
+.add-form {
+    margin-top: 20px;
+
+     input {
+        width: 100%;
+        margin-right: 20px;
+    
+        @media (min-width: $media-tab-md) {
+            width: 350px;
+        }
+        
+    }
+}
+
+
+
